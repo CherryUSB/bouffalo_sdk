@@ -50,9 +50,9 @@ SHELL_CMD_EXPORT_ALIAS(usbh_init, usbh_init, usbh init);
 
 SHELL_CMD_EXPORT_ALIAS(lsusb, lsusb, ls usb);
 
-extern int bluetooth_demo_init(int argc, char **argv);
+// extern int bluetooth_demo_init(int argc, char **argv);
 
-SHELL_CMD_EXPORT_ALIAS(bluetooth_demo_init, bluetooth_demo_init, ls usb);
+// SHELL_CMD_EXPORT_ALIAS(bluetooth_demo_init, bluetooth_demo_init, bluetooth_demo_init);
 int uvcinit(int argc, char **argv)
 {
     video_init(0, 0x20072000);

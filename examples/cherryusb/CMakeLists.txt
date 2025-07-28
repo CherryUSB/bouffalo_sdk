@@ -13,6 +13,10 @@ sdk_add_include_directories(.)
 
 target_sources(app PRIVATE usb_host.c cherryusb/demo/video_static_mjpeg_template.c)
 
+set(CONFIG_CHERRYUSB 1)
+set(CONFIG_CHERRYUSB_DEVICE 1)
+set(CONFIG_CHERRYUSB_HOST 1)
+
 add_subdirectory(cherryusb)
 sdk_set_main_file(main.c)
 sdk_set_linker_script(bl616_flash.ld)
